@@ -1,0 +1,67 @@
+/* Estilo básico del body */
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  text-align: center;
+}
+
+/* Encabezado principal */
+header {
+  padding: 20px 10px;
+}
+
+/* Botones de navegación */
+nav {
+  margin-bottom: 15px;
+}
+
+/* Estilo de botones */
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background-color: #334155;
+  color: white;
+  cursor: pointer;
+}
+
+/* Efecto hover en botones */
+button:hover {
+  background-color: #475569;
+}
+
+/* Contenido principal */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Gif centrado */
+.gifCentro {
+  width: 280px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 16px auto;
+  border-radius: 8px;
+}
+
+/* Iframe con tamaño cómodo */
+#marcoContenido {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  background-color: #1e293b;
+}
+
+/* Pie de página */
+footer {
+  margin-top: 14px;
+  padding: 10px;
+  font-size: 14px;
+}
+

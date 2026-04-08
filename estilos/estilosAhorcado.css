@@ -1,0 +1,78 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  background-color: #0b1220;
+  color: #e2e8f0;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 16px 10px 8px;
+}
+
+/* Contenedor principal */
+.contenedorJuego {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Cajas para separar el contenido */
+.caja {
+  background-color: #1e293b;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+/* Palabra oculta */
+#palabraOculta {
+  font-size: 28px;
+  letter-spacing: 6px;
+  margin: 0;
+}
+
+/* Campo de texto */
+input {
+  padding: 8px;
+  margin-right: 6px;
+  color: #ffffff;
+  background-color: #0b1220;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+/* Botones */
+button {
+  padding: 8px 12px;
+  margin: 4px 4px 0 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #334155;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hover de botones */
+button:hover {
+  background-color: #475569;
+}
+
+/* Dibujo en tipo monoespaciado */
+pre {
+  margin: 0;
+  font-family: Consolas, monospace;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página Principal</title>
+  <link rel="stylesheet" href="./estilos/estilosIndex.css">
+</head>
+<body>
+  <!-- HEADER título principal -->
+  <header>
+    <h1>Taller Programación Web</h1>
+    <p>Hola profe! Esta es la página principal con 2 botones y el iframe.</p>
+  </header>
+
+  <!-- aquí están los botones para cambiar el contenido del iframe -->
+  <nav>
+    <button 
+    id="botonPerfil" 
+    type="button">Ver Perfil</button>
+
+    <button 
+    id="botonAhorcado" 
+    type="button">Ver Ahorcado</button>
+  </nav>
+
+  <!-- gif centrado y área del iframe es los eslilosIndex muestro como está centrado -->
+  <main>
+    <img src="./atomic.gif" alt="Gif animado" class="gifCentro">
+
+    <iframe id="marcoContenido" src="./perfil.html" title="Contenido"></iframe>
+  </main>
+
+  <!-- FOOTER: mensaje final -->
+  <footer>
+    <p>Gracias por ver mi proyecto de programación web con iframe y JavaScript vanilla.</p>
+  </footer>
+
+  <script>
+    // Este bloque obtiene los elementos que vamos a usar.
+    const botonPerfil = document.getElementById("botonPerfil");
+    const botonAhorcado = document.getElementById("botonAhorcado");
+    const marcoContenido = document.getElementById("marcoContenido");
+
+    // Esta función cambia la página que se muestra dentro del iframe.
+    const cambiarPaginaIframe = (rutaPagina) => {
+      marcoContenido.src = rutaPagina;
+    };
+
+    // Este evento carga la página de perfil cuando se hace clic en el botón 1.
+    botonPerfil.addEventListener("click", () => {
+      cambiarPaginaIframe("./perfil.html");
+    });
+
+    // Este evento carga la página del ahorcado cuando se hace clic en el botón 2.
+    botonAhorcado.addEventListener("click", () => {
+      cambiarPaginaIframe("./ahorcado.html");
+    });
+  </script>
+</body>
+</html>
+
