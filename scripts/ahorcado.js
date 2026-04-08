@@ -12,7 +12,7 @@ const mensajeJuego = document.getElementById("mensajeJuego");
 // Este arreglo tiene palabras predefinidas para cumplir la actividad.
 const palabrasDelJuego = [
   "panda",
-  "mala",
+  "nala",
   "milo",
   "mia",
   "maya",

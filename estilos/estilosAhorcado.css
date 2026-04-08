@@ -13,19 +13,34 @@ header {
 }
 
 /* Contenedor principal */
+/* Cambiado para usar flexbox y organizar las cajas en filas, en lugar de apiladas verticalmente.
+   Esto ayuda a que se vean mejor dentro del iframe de index.html. */
 .contenedorJuego {
   width: 90%;
   max-width: 850px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* Cajas para separar el contenido */
+/* Cambiado para que las cajas se repartan el espacio con flex: 1 1 300px, eliminando margin-bottom ya que gap maneja el espacio. */
 .caja {
   background-color: #1e293b;
   border: 1px solid #475569;
   border-radius: 8px;
   padding: 12px;
-  margin-bottom: 10px;
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+/* Controles para jugar */
+/* Usamos flex-direction: column para apilar los botones uno sobre el otro, en lugar de en línea. */
+.controles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 /* Palabra oculta */

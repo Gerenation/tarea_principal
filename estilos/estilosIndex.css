@@ -50,9 +50,10 @@ main {
 }
 
 /* Iframe con tamaño cómodo */
+/* Aumentado la altura de 500px a 700px para que quepa todo el contenido del ahorcado organizado con flexbox. */
 #marcoContenido {
   width: 100%;
-  height: 500px;
+  height: 700px;
   border: 1px solid #475569;
   border-radius: 8px;
   background-color: #1e293b;
