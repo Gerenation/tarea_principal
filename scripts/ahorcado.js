@@ -9,7 +9,7 @@ const botonReiniciar = document.getElementById("botonReiniciar");
 const dibujoAhorcado = document.getElementById("dibujoAhorcado");
 const mensajeJuego = document.getElementById("mensajeJuego");
 
-// Este arreglo tiene palabras predefinidas para cumplir la actividad.
+// Este arreglo tiene palabras predefinidas(nombres de mismascotas incluidos) para cumplir la actividad.
 const palabrasDelJuego = [
   "panda",
   "nala",
