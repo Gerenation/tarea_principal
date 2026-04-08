@@ -13,43 +13,44 @@
     <h1>Juego del Ahorcado</h1>
   </header>
 
-  <!-- MAIN: contenido del juego -->
+  <!-- contenido del juego y contenedor -->
   <main class="contenedorJuego">
-    <!-- SECTION: palabra oculta -->
+    <!-- la caja palabra oculta y para no revelar las letras antes de que se adivine -->
     <section class="caja">
       <h2>Palabra</h2>
       <p id="palabraOculta">_ _ _ _</p>
     </section>
 
-    <!-- SECTION: estado del juego -->
+    <!-- una clase caja estado del juego y y remarco el estado del juego -->
     <section class="caja">
       <p><strong>Intentos restantes:</strong> <span id="intentosRestantes">6</span></p>
       <p><strong>Letras acertadas:</strong> <span id="letrasAcertadas">-</span></p>
       <p><strong>Letras fallidas:</strong> <span id="letrasFallidas">-</span></p>
     </section>
 
-    <!-- SECTION: controles para jugar -->
+    <!-- controles para jugar -->
     <section class="caja">
       <input id="entradaLetra" type="text" maxlength="1" placeholder="Escribe una letra">
       <button id="botonProbar" type="button">Probar letra</button>
       <button id="botonReiniciar" type="button">Nueva palabra</button>
     </section>
 
-    <!-- SECTION: dibujo del ahorcado -->
+    <!-- dibujo del ahorcado está en el script -->
     <section class="caja">
       <h2>Dibujo</h2>
+          <!-- alineacion del dibujo dentro de la caja preservando espacios-->
       <pre id="dibujoAhorcado"></pre>
     </section>
 
-    <!-- SECTION: mensajes del juego -->
+    <!-- mensaje del juego -->
     <section class="caja">
       <p id="mensajeJuego">Escribe una letra y presiona Probar.</p>
     </section>
   </main>
 
-  <!-- FOOTER: pie de página -->
+  <!-- Pie de página -->
   <footer>
-    Juego básico hecho en JavaScript vanilla.
+    Espero que disfrutes del juego del ahorcado!
   </footer>
 </body>
 </html>
